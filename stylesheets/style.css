@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: black;
+}
+
+.wrapper {
+    display: inline-flex;
+}
+
+.wrapper .dynamic-text {
+    margin-left: 15px;
+}
+
+.dynamic-text li {
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+}
+
+.dynamic-text li span {
+    position: relative;
+}
+
+.dynamic-text li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid white;
+    animation: typing 3s steps(13) infinite;
+    background:#000
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
