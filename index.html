@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House Of Code</title>
     <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -16,15 +18,15 @@
         </div>
 
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Experience</a>
-            <a href="#">Education</a>
-            <a href="#">Portfolio</a>
+            <a  onclick="scrollToSection('home')">Home</a>
+            <a  onclick="scrollToSection('about')">About</a>
+            <a  onclick="scrollToSection('portfolio')">Portfolio</a>
+            <a  onclick="scrollToSection('experience')">Experience</a>
+           
         </nav>
     </header>
 
-    <div class="video-container">
+    <div class="video-container" id="home">
         <video autoplay loop muted playsinline class="background-vid">
             <source src="media/vid2.mp4" type="video/mp4">
         </video>
@@ -39,7 +41,7 @@
     </div>
 
    
-<section class="about">
+<section class="about"  id="about">
     <div class="right">
         <p class="p-about">About Me</p>
         
@@ -56,7 +58,17 @@
       </p>
 </section>
 
-<section class="about"></section>
+<section class="projects" id="portfolio">
+    <p class="p-projects">Projects</p>
+</section>
+
+<section class="exp" id="experience">
+    <p class="p-exp">Experience</p>
+</section>
+
+<footer class="end">
+    <p class="end-f">A chopped zombie creation</p>
+</footer>
     
 
 
