@@ -1,4 +1,6 @@
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
-    section.scrollIntoView({ behavior: 'smooth' });
+    const headerOffset = document.querySelector('.header').offsetHeight;
+    const sectionTop = section.offsetTop - headerOffset;
+    window.scrollTo({ top: sectionTop, behavior: 'smooth' });
 }
