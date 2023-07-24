@@ -282,7 +282,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: var(--sectionHeight)-50px;
+  height: 80vh;
   background-color: black;
 }
 
@@ -303,26 +303,26 @@ body {
 
 .slider {
   display: flex;
-  aspect-ratio: 16/9;
   overflow: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  height: 100%;
 }
 
 .slider .img {
-  flex: 1 0 100%;
+  position: relative; /* Add position relative to the "img" div */
+  flex: 0 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
-  width:500px;
-  height: 500px;
-  background-color: red;
-}
-
-#tsparticles{
+  width: 100%;
+  overflow: hidden;
   background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .slider-nav {
   display: flex;
@@ -346,3 +346,29 @@ body {
 .slider-nav a:hover {
   opacity: 1;
 }
+
+.slider .img .slide-content {
+  position: absolute; /* Position the slide content absolutely within the "img" div */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.slider .img .slide-content h2 {
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+
+.slider .img .slide-content p {
+  font-size: 20px;
+  width: 50%;
+  text-align: left;
+}
+
