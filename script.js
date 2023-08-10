@@ -4,3 +4,5 @@ function scrollToSection(sectionId) {
     const sectionTop = section.offsetTop - headerOffset;
     window.scrollTo({ top: sectionTop, behavior: 'smooth' });
 }
+
+
