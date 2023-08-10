@@ -434,7 +434,9 @@ body {
 #check:checked~.navbar{
   height: 17.7rem;
 }
-
+#tsparticles{
+  height: 85%;
+}
 }
 
 
@@ -468,7 +470,7 @@ body {
     left: 0;
     top: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,.1);
+    background-color: black;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
     transition: .3s ease;
     overflow: hidden;
@@ -477,3 +479,13 @@ body {
 }
 
 
+@media only screen and (min-width: 700px) and (max-width: 1000px){
+  #tsparticles{
+    height: 95%;
+   
+  }
+  
+  .slide-content{
+    margin-bottom: 30px;
+  }
+}
