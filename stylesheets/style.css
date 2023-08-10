@@ -135,7 +135,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height:var(--sectionHeight);
+  height:50rem
  
 }
 .about > * {
@@ -246,7 +246,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 50rem;
   background-color: black;
 }
 
