@@ -348,11 +348,15 @@ body {
 
 /* phone */
 @media only screen and (max-width: 700px) {
+  .p- {
+    max-width: 80%;
+    
+  }
   .video-container {
     height:  var(--sectionHeight) 
   }
   .about {
-    height: 75rem
+    height: 60rem
   }
 
   .projects{
@@ -437,11 +441,26 @@ body {
 #tsparticles{
   height: 85%;
 }
+.gene-p {
+
+  height: 30rem;
+  margin: 10px;
+}
+
 }
 
 
 
 @media only screen and (max-width: 290px){
+  #tsparticles{
+    height: 95%;
+    
+  }
+  .slide-content{
+    margin-bottom: 50px;
+    
+  }
+
   .slider .img .slide-content{
     top:150px
   }
@@ -450,7 +469,7 @@ body {
     height:  70rem
   }
   .about {
-    height: 95rem
+    height: 70rem
   }
   .dynamic-text li{
     font-size: 40px;
@@ -459,10 +478,16 @@ body {
   .video-container {
     height:  70vh
   }
+  .p- {
+   
+    max-width: 80%;
+   
+  }
 }
 
+  /* CSS specific to iOS devices */
 @supports (-webkit-touch-callout: none) {
-  /* CSS specific to iOS devices */ 
+ 
 
   .navbar{
     position: absolute;
@@ -478,14 +503,26 @@ body {
   }
 }
 
-
+/*ipad*/
 @media only screen and (min-width: 700px) and (max-width: 1000px){
   #tsparticles{
     height: 95%;
+    width: 100%;
    
+ 
   }
+  .projects{
+    height:  57rem
+  }
+
+ .gene-p {
+    width: 80%;
+    height: 100%;
+    top: 0;
+    
+}
   
-  .slide-content{
-    margin-bottom: 30px;
+  .p- {
+    max-width: 80%;
   }
 }
