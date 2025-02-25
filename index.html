@@ -2,120 +2,134 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House Of Code</title>
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <script src="script.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"> </script>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Of Code</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <script src="script.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"> </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
 </head>
 
 <body>
-    
 
-    <header class="header">
-        <div class="left">
-            <a href="#" class="logo">HoC.</a>
-        </div>
-        <input type="checkbox" id="check">
-        <label class = "icons" for ="check" >
-            
-            <i class='bx bx-menu' style='color:#ffffff' id ='menu-icon' ></i>
-            <i class='bx bx-x' style='color:#ffffff' id="closed-icon"></i>
-        </label>
-        
 
-        <nav class="navbar">
-            <a  onclick="scrollToSection('home')">Home</a>
-            <a  onclick="scrollToSection('about')">About</a>
-            <a  onclick="scrollToSection('portfolio')">Portfolio</a>
-            <a  onclick="scrollToSection('experience')">Experience</a>
-           
-        </nav>
-    </header>
-
-    <div class="video-container" id="home">
-        <video autoplay loop muted playsinline class="background-vid">
-            <source src="media/vid2.mp4" type="video/mp4">
-        </video>
-
-        <div class="overlay">
-            <div class="wrapper">
-                <ul class="dynamic-text">
-                    <li><span class="typing-animation">House of Code..</span></li>
-                </ul>
-            </div>
-        </div>
+  <header class="header">
+    <div class="left">
+      <a href="#" class="logo">HoC.</a>
     </div>
+    <input type="checkbox" id="check">
+    <label class="icons" for="check">
 
-   
-<section class="about"  id="about">
+      <i class='bx bx-menu' style='color:#ffffff' id='menu-icon'></i>
+      <i class='bx bx-x' style='color:#ffffff' id="closed-icon"></i>
+    </label>
+
+
+    <nav class="navbar">
+      <a onclick="scrollToSection('home')">Home</a>
+      <a onclick="scrollToSection('about')">About</a>
+      <a onclick="scrollToSection('portfolio')">Portfolio</a>
+      <a onclick="scrollToSection('experience')">Experience</a>
+
+    </nav>
+  </header>
+
+  <div class="video-container" id="home">
+    <video autoplay loop muted playsinline class="background-vid">
+      <source src="media/vid2.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay">
+      <div class="wrapper">
+        <ul class="dynamic-text">
+          <li><span class="typing-animation">House of Code..</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="about" id="about">
     <div class="right">
-        <p class="p-about">About Me</p>
-        
+      <p class="p-about">About Me</p>
+
     </div>
     <div class="circular-image-container">
-        <img class="circular-image" src="media/ed.png" alt="Circular Image">
-      </div>
-      <p class="p-"><b>T</b>he still is from the movie "The Social Network," where Eduardo pens down the Elo algorithm used to rate chess players. 
-        I was fascinated by how a few lines of algebraic expressions could be transformed into a precise problem-solving instruction set. 
-        I still remember this movie as my first source of inspiration in the world of technology. 
-        It was my initial introduction to the fast-paced world of startups, entrepreneurship, and technology. 
-        It motivated me and made me think about the impact that a small group of individuals can have on the world by building something groundbreaking and revolutionizing the world around us. 
-        Driven by this curiosity, I was propelled into the world of software strategy, creation, and change.
-      </p>
-</section>
+      <img class="circular-image" src="media/ed.png" alt="Circular Image">
+    </div>
+    <p class="p-"><b>T</b>he still is from the movie "The Social Network," where Eduardo pens down the Elo algorithm
+      used to rate chess players.
+      I was fascinated by how a few lines of algebraic expressions could be transformed into a precise problem-solving
+      instruction set.
+      I still remember this movie as my first source of inspiration in the world of technology.
+      It was my initial introduction to the fast-paced world of startups, entrepreneurship, and technology.
+      It motivated me and made me think about the impact that a small group of individuals can have on the world by
+      building something groundbreaking and revolutionizing the world around us.
+      Driven by this curiosity, I was propelled into the world of software strategy, creation, and change.
+    </p>
+  </section>
 
-<section class="projects" id="portfolio">
+  <section class="projects" id="portfolio">
     <p class="p-projects">Projects</p>
     <div class="slider-wrapper">
-        <div class="slider">
-            <div id="tsparticles" class="img">
-                <div class="slide-content">
-                    <h2 class="gene-h">Gene Networks</h2>
-                    <p class = "gene-p">In my opinion, most medical treatments improved the 
-                        symptoms and not the root cause of the disease. 
-                        Also, I believe modern medicine lacks a clear understanding of many physiological aspects of the human body. 
-                        These unsolved mysteries of the human body intrigued me. Following my curiosity and passion, I took up the role of a Bioinformatician and machine learning engineer at Merck.
-                        My research initiative focuses on decoding the complexities of neurodegenerative diseases, including Alzheimer's, Parkinson's, and ALS, using advanced machine-learning techniques. By delving into gene regulatory networks, my aim is to uncover hidden patterns and essential regulatory hubs that play a pivotal role in the development of these debilitating conditions.
-                        </p>
-                </div>
-            </div>
-            <div id="slide-2" class="img">
-                <div class="slide-content" >
-                    <h2>Tensorflow</h2>
-                    <p style="width: auto;">This repository is a collection of projects focused on the ever-growing 
-                        field of machine learning. It features a diverse range of projects, 
-                        aimed at exploring different areas of this field, from object 
-                        identification, transfer learning, natural language processing, and 
-                        sentiment analysis, to name a few. These projects leverage a variety of
-                         neural network models, including convolutional neural networks (CNNs), 
-                         recurrent neural networks (RNNs), long short-term memory (LSTM) 
-                         networks, and gated recurrent unit (GRU) networks. By working on 
-                         these different projects, you can expect to gain a comprehensive 
-                         understanding of the inner workings of these networks and the 
-                         principles behind them. One particularly exciting project in 
-                         development is a cycleGAN that can generate different beards and 
-                         hairstyles on user images. This project is a testament to the 
-                         versatility of machine learning and the potential to create innovative
-                          and creative solutions to everyday problems.</p>
-                          <form style="margin: 10px;">
-                            <button class="btn"   formtarget="_blank" type="submit" formaction="https://github.com/HouseOfCode0/TensorFlow_projects"><i class='bx bxl-github' style='font-size: 40px;' ></i></i></button>
-                          </form>
-                          
-                </div>
-                
-            </div>
+      <div class="slider">
+        <div id="tsparticles" class="img">
+          <div class="slide-content">
+            <h2 class="gene-h">Gene Networks</h2>
+            <p class="gene-p">In my opinion, most medical treatments improved the
+              symptoms and not the root cause of the disease.
+              Also, I believe modern medicine lacks a clear understanding of many physiological aspects of the human
+              body.
+              These unsolved mysteries of the human body intrigued me. Following my curiosity and passion, I took up the
+              role of a Bioinformatician and machine learning engineer at Merck.
+              My research initiative focuses on decoding the complexities of neurodegenerative diseases, including
+              Alzheimer's, Parkinson's, and ALS, using advanced machine-learning techniques. By delving into gene
+              regulatory networks, my aim is to uncover hidden patterns and essential regulatory hubs that play a
+              pivotal role in the development of these debilitating conditions.
+            </p>
+          </div>
         </div>
-        <div class="slider-nav">
-            <a href="#tsparticles"></a>
-            <a href="#slide-2"></a>
+        <div id="slide-2" class="img">
+          <div class="slide-content">
+            <h2>Tensorflow</h2>
+            <p style="width: auto;">This repository is a collection of projects focused on the ever-growing
+              field of machine learning. It features a diverse range of projects,
+              aimed at exploring different areas of this field, from object
+              identification, transfer learning, natural language processing, and
+              sentiment analysis, to name a few. These projects leverage a variety of
+              neural network models, including convolutional neural networks (CNNs),
+              recurrent neural networks (RNNs), long short-term memory (LSTM)
+              networks, and gated recurrent unit (GRU) networks. By working on
+              these different projects, you can expect to gain a comprehensive
+              understanding of the inner workings of these networks and the
+              principles behind them. One particularly exciting project in
+              development is a cycleGAN that can generate different beards and
+              hairstyles on user images. This project is a testament to the
+              versatility of machine learning and the potential to create innovative
+              and creative solutions to everyday problems.</p>
+            <form style="margin: 10px;">
+              <button class="btn" formtarget="_blank" type="submit"
+                formaction="https://github.com/HouseOfCode0/TensorFlow_projects"><i class='bx bxl-github'
+                  style='font-size: 40px;'></i></i></button>
+            </form>
+
+          </div>
+
         </div>
+      </div>
+      <div class="slider-nav">
+        <a href="#tsparticles"></a>
+        <a href="#slide-2"></a>
+      </div>
     </div>
-</section>
+  </section>
 
 
 
@@ -125,64 +139,64 @@
 
 
 
- <script>
+  <script>
     tsParticles.load("tsparticles", {
-  particles: {
-    number: { value: 80, density: { enable: true, value_area: 800 } },
-    color: { value: "#ffffff" },
-    shape: {
-      type: "circle",
-      stroke: { width: 0, color: "#000000" },
-      polygon: { nb_sides: 5 },
-      image: { src: "img/github.svg", width: 100, height: 100 }
-    },
-    opacity: {
-      value: 0.5,
-      random: false,
-      anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
-    },
-    size: {
-      value: 3,
-      random: true,
-      anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
-    },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: "#ffffff",
-      opacity: 0.4,
-      width: 1
-    },
-    move: {
-      enable: true,
-      speed: 6,
-      direction: "none",
-      random: false,
-      straight: false,
-      out_mode: "out",
-      bounce: false,
-      attract: { enable: false, rotateX: 600, rotateY: 1200 }
-    }
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: { enable: true, mode: "repulse" },
-      onclick: { enable: true, mode: "push" },
-      resize: true
-    },
-    modes: {
-      grab: { distance: 400, line_linked: { opacity: 1 } },
-      bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
-      repulse: { distance: 200, duration: 0.4 },
-      push: { particles_nb: 4 },
-      remove: { particles_nb: 2 }
-    }
-  },
-  retina_detect: true
-});
- </script>
-    
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: {
+          type: "circle",
+          stroke: { width: 0, color: "#000000" },
+          polygon: { nb_sides: 5 },
+          image: { src: "img/github.svg", width: 100, height: 100 }
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+        },
+        size: {
+          value: 3,
+          random: true,
+          anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 6,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: { enable: false, rotateX: 600, rotateY: 1200 }
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" },
+          resize: true
+        },
+        modes: {
+          grab: { distance: 400, line_linked: { opacity: 1 } },
+          bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+          repulse: { distance: 200, duration: 0.4 },
+          push: { particles_nb: 4 },
+          remove: { particles_nb: 2 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+
 
 
 

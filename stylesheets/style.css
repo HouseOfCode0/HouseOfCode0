@@ -6,7 +6,7 @@
 
 :root {
   --sectionHeight: 110vh;
-  
+
 }
 
 body {
@@ -85,6 +85,7 @@ body {
 }
 
 .typing-animation {
+  font-family: 'IBM Plex Mono', monospace;
   display: inline-block;
   overflow: hidden;
   position: relative;
@@ -135,12 +136,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height:50rem
- 
+  height: 50rem
 }
-.about > * {
+
+.about>* {
   margin: 30px 0;
 }
+
 .right {
   height: 50px
 }
@@ -158,12 +160,12 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
+
 }
 
 .p-about {
   color: black;
- 
+
   font-size: 3rem;
   white-space: nowrap;
   align-self: center;
@@ -174,21 +176,22 @@ body {
   color: black;
   max-width: 45%;
   font-size: 18px;
- 
+
 }
 
 
 
-.end{
+.end {
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  width:100%;
-  height:50px
+
+  width: 100%;
+  height: 50px
 }
-.end-f{
+
+.end-f {
   color: white;
 }
 
@@ -196,46 +199,51 @@ body {
 
 
 
-.exp{
-  display :flex;
+.exp {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 5rem ;
+  padding-bottom: 5rem;
   background-color: white;
   padding-top: 20px;
 }
 
-.exp .education-row{
+.exp .education-row {
   display: flex;
   flex-wrap: wrap;
-  gap:5rem;
+  gap: 5rem;
   width: 85%;
-  
+
 }
-.p-exp{
+
+.p-exp {
   color: black;
   font-size: 3rem;
   white-space: nowrap;
   margin-bottom: 100px;
 }
-.education-row .education-column{
+
+.education-row .education-column {
   flex: 1 1 40rem;
-  
+
 }
-.year{
-  margin:20px
+
+.year {
+  margin: 20px
 }
-.education-column .title{
+
+.education-column .title {
   font-size: 2.5rem;
   margin: 0 0 1.5rem 2rem;
 }
 
 
-.education-column .education-box{
+.education-column .education-box {
   border-left: .2rem solid black;
 }
-.education-box .education-content{
+
+.education-box .education-content {
   position: relative;
   padding-left: 2rem;
 }
@@ -275,7 +283,8 @@ body {
 }
 
 .slider .img {
-  position: relative; /* Add position relative to the "img" div */
+  position: relative;
+  /* Add position relative to the "img" div */
   flex: 0 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
@@ -296,7 +305,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  
+
 }
 
 .slider-nav a {
@@ -313,7 +322,8 @@ body {
 }
 
 .slider .img .slide-content {
-  position: absolute; /* Position the slide content absolutely within the "img" div */
+  position: absolute;
+  /* Position the slide content absolutely within the "img" div */
   top: 10px;
   left: 0;
   right: 0;
@@ -338,12 +348,13 @@ body {
 }
 
 
-.icons{
+.icons {
   font-size: 2rem;
   cursor: pointer;
   display: none;
 }
-#check{
+
+#check {
   display: none;
 }
 
@@ -351,58 +362,67 @@ body {
 @media only screen and (max-width: 700px) {
   .p- {
     max-width: 80%;
-    
+
   }
+
   .video-container {
-    height:  var(--sectionHeight) 
+    height: var(--sectionHeight)
   }
+
   .about {
     height: 60rem
   }
 
-  .projects{
-    height:  60rem
+  .projects {
+    height: 60rem
   }
-  .exp{
-    height:  80rem
+
+  .exp {
+    height: 80rem
   }
 
   .circular-image-container {
     width: 200px;
     height: 200px;
   }
-  .slider .img .slide-content{
+
+  .slider .img .slide-content {
     height: 90vh;
-   
+
   }
 
   .slider .img .slide-content p {
-    font-size:  18px;
-    width:100%;
-    
+    font-size: 18px;
+    width: 100%;
+
   }
-  .slider .img .slide-content h2{
+
+  .slider .img .slide-content h2 {
     font-size: 30px;
   }
 
   /*navbar icons */
-  .icons{
+  .icons {
     display: inline-flex;
   }
-  #closed-icon{
-    display: none;
-  }
-  #check{
+
+  #closed-icon {
     display: none;
   }
 
-  #check:checked~ .icons #menu-icon{
+  #check {
     display: none;
   }
-  #check:checked~ .icons #closed-icon{
+
+  #check:checked~.icons #menu-icon {
+    display: none;
+  }
+
+  #check:checked~.icons #closed-icon {
     display: block;
   }
-  .header{
+
+  .header {
     position: fixed;
     top: 0;
     left: 0;
@@ -411,93 +431,99 @@ body {
     display: flex;
     justify-content: space-between;
     z-index: 100
-
   }
 
-  
-  .navbar{
+
+  .navbar {
     position: absolute;
     height: 0;
     left: 0;
     top: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,.1);
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
     transition: .3s ease;
     overflow: hidden;
-   backdrop-filter: blur(50px);
-   
-    
+    backdrop-filter: blur(50px);
+
+
   }
-  .navbar a{
+
+  .navbar a {
     display: block;
     text-align: center;
     margin: 1.5rem 0;
     font-size: 1.3rem;
   }
 
-#check:checked~.navbar{
-  height: 17.7rem;
+  #check:checked~.navbar {
+    height: 17.7rem;
+  }
+
+  #tsparticles {
+    height: 85%;
+  }
+
+  .gene-p {
+
+    height: 30rem;
+    margin: 10px;
+  }
+
 }
-#tsparticles{
-  height: 85%;
-}
-.gene-p {
-
-  height: 30rem;
-  margin: 10px;
-}
-
-}
 
 
 
-@media only screen and (max-width: 290px){
-  #tsparticles{
+@media only screen and (max-width: 290px) {
+  #tsparticles {
     height: 95%;
-    
+
   }
-  .slide-content{
+
+  .slide-content {
     margin-bottom: 50px;
-    
+
   }
 
-  .slider .img .slide-content{
-    top:150px
+  .slider .img .slide-content {
+    top: 150px
   }
 
-  .projects{
-    height:  70rem
+  .projects {
+    height: 70rem
   }
+
   .about {
     height: 70rem
   }
-  .dynamic-text li{
+
+  .dynamic-text li {
     font-size: 40px;
   }
 
   .video-container {
-    height:  70vh
+    height: 70vh
   }
+
   .p- {
-   
+
     max-width: 80%;
-   
+
   }
 }
 
-  /* CSS specific to iOS devices */
+/* CSS specific to iOS devices */
 @supports (-webkit-touch-callout: none) {
- 
 
-  .navbar{
+
+  .navbar {
     position: absolute;
     height: 0;
     left: 0;
     top: 100%;
     width: 100%;
     background-color: black;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
     transition: .3s ease;
     overflow: hidden;
     opacity: 0.8;
@@ -505,24 +531,25 @@ body {
 }
 
 /*ipad*/
-@media only screen and (min-width: 700px) and (max-width: 1000px){
-  #tsparticles{
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  #tsparticles {
     height: 95%;
     width: 100%;
-   
- 
-  }
-  .projects{
-    height:  57rem
+
+
   }
 
- .gene-p {
+  .projects {
+    height: 57rem
+  }
+
+  .gene-p {
     width: 80%;
     height: 100%;
     top: 0;
-    
-}
-  
+
+  }
+
   .p- {
     max-width: 80%;
   }
